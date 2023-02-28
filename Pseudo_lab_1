@@ -1,0 +1,67 @@
+Class student(){
+	input student_name, student_id, dob
+}	
+
+def get_student_info(student_number){
+	for i in range(student_number)
+		studentList.append(student(student_name, student_id, dob))
+	return studentList
+
+}
+
+Class course(){
+	input id_course, name_course
+}
+
+def get_course_info(course_number){
+	for i in range(course_number)
+		courseList.append(course(id_course, name_course))
+	return courseList
+}
+
+class Student_course(){
+	def __init___(self, id_student, id_course, marks):
+		self.id_student = id_student
+		self.id_course = id_course
+		self.marks = marks
+	
+}
+
+#Check whether or not the course exists
+def checkCourse(courseList, id_course) 
+	check = false
+	for i in courseList
+		if id_course == i.id_course
+			check = true
+			break
+	return checkCourse
+		
+#Input the mark in the list of students
+def marks(studentList, courseList){
+	studentCourseList = {}
+	for student in studentList
+		input courseNumber
+		for c in courseNumber
+			input id_course
+			if (checkCourse(courseList), id_course))
+				input mark
+				studentCourseList.append(Student_course(id_student, id_course, mark))
+			else 
+				print('course does not exist')
+
+	return studentCourseList
+}
+	
+def main(){
+	
+	student_number = input()
+	studentList = get_student_info(student_number)
+	course_number = input()
+	Courselist = get_course_info(course_number)
+	studentCourseList = marks(studentlist, courselist)
+	print(student_course)
+	print(courselist)
+	print(studentlist)
+	print(studentcourselist)
+	
+}
